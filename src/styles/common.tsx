@@ -10,6 +10,7 @@ export const StyledContainer = styled.div`
   max-width: 701px;
   color: black;
   margin: 30px auto;
+  padding: 10px;
 `;
 
 export const StyledButton = styled.button`

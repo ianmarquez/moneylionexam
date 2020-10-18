@@ -54,7 +54,7 @@ const DOBComponent:React.FunctionComponent = () => {
   <ProgressBarComponent/>
     <StyledContainer>
       <h2>What’s your date of birth?</h2>
-      <StyledContainer style={{ textAlign: 'left', width: 400}}>
+      <StyledContainer style={{ textAlign: 'left'}}>
         <StyledLabel>Your Birthday</StyledLabel>
         <StyledTextBox ref={refBirthday}/>
         <StyledLabel>MM/DD/YYYY</StyledLabel>

@@ -70,11 +70,13 @@ const AgreementComponent = () => {
     <ProgressBarComponent/>
     <StyledContainer>
       <h2>One last step!</h2>
-      <StyledContainer style={{ textAlign: 'left', width: 400}}>
+      <StyledContainer style={{ textAlign: 'left'}}>
         <Grid container>
           <Grid item sm={12}>
             <StyledLabel>Agreement</StyledLabel> <br/>
           </Grid>
+        </Grid>
+        <Grid container>
           <Grid item sm={2}>
             <Checkbox checked={agreement1} onChange={() => setAgreement1(!agreement1)}></Checkbox>
           </Grid>

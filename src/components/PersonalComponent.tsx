@@ -47,7 +47,7 @@ const PersonalComponent : React.FunctionComponent = () => {
     <ProgressBarComponent/>
     <StyledContainer>
       <h2>Create your Account</h2>
-      <StyledContainer style={{ textAlign: 'left', width: 400}}>
+      <StyledContainer style={{ textAlign: 'left'}}>
         <StyledLabel>First Name</StyledLabel>
         <StyledTextBox ref={refFN}/>
         <StyledLabel>Last Name</StyledLabel>
