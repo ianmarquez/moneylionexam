@@ -49,8 +49,7 @@ const AgreementComponent = () => {
       await axios.post('https://5f79819fe402340016f93139.mockapi.io/api/user', registerState);
       setError(false);
       setSaveSuccess(true);
-      window.localStorage.removeItem('RegisterState');
-      window.localStorage.removeItem('lastPage');
+      dispatch({ type: 'RESET' });
     } catch (err) {
       setErrorMessage(API_REQUEST_FAILED);
       setError(true);

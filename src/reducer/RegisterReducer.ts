@@ -55,6 +55,8 @@ const RegisterReducer = (state: RegisterState = getInitialState(), action: Actio
       break;
     case 'RESET':
       currentState = initialState;
+      window.localStorage.removeItem('RegisterState');
+      window.localStorage.removeItem('lastPage');
       break;
   }
   return currentState;
