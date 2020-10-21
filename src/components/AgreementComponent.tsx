@@ -55,7 +55,11 @@ const AgreementComponent = () => {
       setError(true);
       return;
     }
-    setTimeout(() => history.push('/welcome'), 1000)
+    setTimeout(() => {
+      window.localStorage.removeItem('RegisterState');
+      window.localStorage.removeItem('lastPage');
+      history.push('/welcome')
+    }, 1000)
   }
 
   const renderSuccessMessage = () => <Snackbar open={true} autoHideDuration={6000}>
